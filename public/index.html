@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCollab</title>
+    <!-- <link rel="stylesheet" href="styleAddP.css"> -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/img/descarga.png" type="image/png" sizes="1000x1000">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="Header-details-main" id="fixed-header">
+        <div class="Header-details-bg"></div>
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: transparent;">
+            <div class="Header-visuals-details">
+                <a href="./index.html"><img src="/img/descarga.png" alt="" /></a>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav  mt-2 mt-lg-0 ml-auto">
+                    <!-- <li class="nav-item active mr-4 mt-3"> 
+                        <a class="nav-item" href="/html/messege.html" title="Notificaciones"><i class="fas fa-bell" style="font-size: 24px;"></i></a>
+                    </li> -->
+                    <li class="nav-item active mr-3 mt-3">
+                        <!-- <a class="nav-link" href="#">Mis proyectos</a> -->
+                        <a class="nav-item" href="/html/manage_projects.html" title="Mis Proyectos"><i class="fas fa-project-diagram" style="font-size: 24px;"></i></a>
+    
+                    </li>
+                    <li class="nav-item active mr-4 mt-1">
+                        <!-- <a class="nav-link" href="#">Mi Perfil</a> -->
+                        <a class="nav-link" href="/html/perfil.html" title="Mi perfil"><img class="icon-perfil" src="/img/avatar-370-456322.webp" alt=""></a>
+    
+    
+                    </li>
+
+                    <li id="Login" class="nav-item dropdown mt-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Login</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" data-target="#loginmodal" data-toggle="modal">Login</a>
+                            <a class="dropdown-item" data-target="#registermodal" data-toggle="modal">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="Header-visuals-details">
+            <!-- <a href="./index.html"><img src="./img/descarga.png" alt=""/></a>  -->
+        </div>
+    </div>
+    
+    
+    <div class="Header">
+        <div class="Header-background"></div>
+        <div class="Header-content">
+            <div class="Header-hero">
+                <h1>Encuentra proyectos<br />para colaborar</h1>
+                <p></p>
+                <a href="#proyectos"><button class="Button">Comienza Ahora</button></a>
+            </div>
+            <div class="Header-visuals">
+                <img src="/img/descarga.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contenedor" id="home-container">
+        <div class="row header-contenido">
+            <div class="col-6">
+                <h2 id="proyectos">Proyectos</h2>
+                <p>Encuentra proyectos con los que te gustaría colaborar</p>
+                <br>
+                <div class="form-group">
+                  <label for="">Buscar proyecto por nombre:</label>
+                  <input type="text"
+                    class="form-control" name="search" id="search" aria-describedby="helpId" placeholder="Nombre del proyecto">
+                </div>
+            </div>
+            <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary btn-add"> <a href="/html/agregarProyecto.html">Agregar Proyecto</a> </button>
+            </div>
+        </div>
+
+        <div class="filtros">
+
+        </div>
+
+        <div class="cards" id="cards">
+            <!-- <div class="card text-left">
+                <h4 class="card-title titulo-card">Diseño de página web Front-End</h4>
+                <p class="card-text descripcion-card">¿Te gusta diseñar lo que ve el usuario? Esto es para ti</p>
+                <p class="titulo-card">Diseño de página web Front-End</p>
+                
+            </div> -->
+
+            <div class="card border text-left">
+                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Diseño de página web Front-End</h4>
+                    <p class="card-text">¿Te gusta diseñar lo que ve el usuario? Esto es para ti</p>
+                    <a href="/html/details.html"><button type="button" class="btn btn-aplicar">Aplica ahora</button></a>
+                </div>
+
+                <div class="footer-card">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="icon-and-user">
+                                <img src="/img/avatar3.png" alt="">
+                                <p>TheHacker54</p>
+                                <p>•</p>
+                                <p>Created at: 19/Apr/2023</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                            <p class="btn-disponibilidad-si">Disponible</p>
+                        </div>
+
+
+                    </div> <!-- Cierre row-->
+
+
+                </div>
+            </div>
+
+
+            <div class="card border text-left">
+                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Back-end con mySQL</h4>
+                    <p class="card-text">Si te gusta controlar lo que pasa detrás de una página web, esto es para ti</p>
+                    <a href="/html/details.html"><button type="button" class="btn btn-aplicar">Aplica ahora</button></a>               
+                 </div>
+
+                <div class="footer-card">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="icon-and-user">
+                                <img src="/img/avatar2.png" alt="">
+                                <p>Anonymous12</p>
+                                <p>•</p>
+                                <p>Created at: 19/Apr/2023</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                            <p class="btn-disponibilidad-no">No disponible</p>
+                        </div>
+
+
+                    </div> <!-- Cierre row-->
+
+
+                </div>
+            </div>
+        </div>
+        </div> 
+<!-- >>>>>>> b6470e66519b4587d4206e1071d56bd5505e3ab1:index.html -->
+
+
+    </div>
+
+    <!-- Modal Sign Up -->
+
+    <div class="modal fade" id="registermodal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-modal">
+                <div class="form-group">
+                  <label for="inputFirstName">Nombres</label>
+                  <input type="text" class="form-control-modal" id="inputFirstName" placeholder="Ingresa tus nombres">
+                </div>
+                <div class="form-group">
+                  <label for="inputLastName">Apellidos</label>
+                  <input type="text" class="form-control-modal" id="inputLastName" placeholder="Ingresa tus apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Usuario</label>
+                    <input type="text" class="form-control-modal" id="inputUser" placeholder="Ingresa un nombre de usuario">
+                  </div>
+                <div class="form-group">
+                  <label for="inputEmail">Correo electrónico</label>
+                  <input type="email" class="form-control-modal" id="inputEmail" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword">Contraseña</label>
+                  <input type="password" class="form-control-modal" id="inputPassword" placeholder="Ingresa tu contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Confirmar contraseña</label>
+                    <input type="password" class="form-control-modal" id="inputPassword2" placeholder="Confirma tu contraseña">
+                  </div>
+                <p>¿Ya tienes cuenta? <a data-target="#loginmodal" data-toggle="modal" data-dismiss="modal" href="#"><b>Inicia sesión</b></a></p>
+                <button onclick="Registro()" class="btn btn-register">Registrarse</button>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Modal Login -->
+
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-modal">
+            <div class="form-group">
+              <label for="inputEmail">Correo</label>
+              <input type="email" class="form-control-modal" id="inputEmail-l" placeholder="Ingresa tu usuario">
+            </div>
+            <div class="form-group">
+              <label for="inputPassword">Contraseña</label>
+              <input type="password" class="form-control-modal" id="inputPassword-l" placeholder="Ingresa tu contraseña">
+            </div>
+  
+            <p>¿Aun no tienes cuenta? <a data-target="#registermodal" data-toggle="modal" data-dismiss="modal" href="#"><b>Regístrate</b></a></p>
+            <button type="button" onclick="login()" class="btn btn-register">Iniciar Sesion</button>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <script src="./js/users.js">
+    
+      
+    </script>
+    <script>
+      borrarLogin()
+    </script>
+<!-- <<<<<<< HEAD -->
+    
+
+    <script src="./js/projects.js"></script>
+<!-- >>>>>>> 262293e611e66b45b042d2f5754e5915773a2992 -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

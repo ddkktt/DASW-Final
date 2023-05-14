@@ -1,0 +1,132 @@
+@host = http://localhost:3001
+
+###
+GET {{host}}/api/projects
+
+###
+GET {{host}}/api/projects/8VvGbrIMjxzQwntwJut9V
+
+
+###
+POST {{host}}/api/projects
+Content-Type: application/json
+
+{
+    "title": "Test 4",
+    "description": "test desc",
+    "creationDate": "20230505",
+    "available": "true",
+    "creator": "test creator"
+}
+
+###
+PUT {{host}}/api/projects/eSolUbKMgrYF-jNJfKgHl
+Content-Type: application/json
+
+{
+  "creator": "xDev3"
+
+}
+
+###
+PUT {{host}}/api/projects/8VvGbrIMjxzQwntwJut9V/notavailable
+Content-Type: application/json
+
+{
+    "available": "false"
+}
+
+
+###
+DELETE {{host}}/api/projects/OE5m4U6MXA704Plt4tNwc
+
+
+
+
+
+###
+GET {{host}}/api/users
+
+
+###
+POST {{host}}/api/users
+Content-Type: application/json
+x-creator: 12345
+
+{
+    "Nombres":"juan3",
+     "Apellidos":"juan3",
+    "email":"juan3@mail",
+    "password":"1233"
+}
+
+
+# PUT {{host}}/api/users
+# Content-Type: application/json
+
+# {
+#     "email":"juan1@mail.com"
+# }
+
+###
+PUT http://localhost:3001/api/users/ds@gmail.com
+Content-Type: application/json
+x-auth: 12345
+
+{
+  
+    "email":"ds1@mail.com"
+}
+
+###
+DELETE {{host}}/api/users/juan@mail.com
+x-auth: 12345
+
+
+###
+POST {{host}}/api/messages
+Content-Type: application/json
+
+{
+"sender": "5ff2a2f5b5a5c5d5a5f5c5e5",
+"projectId": "a1",
+"content": "mensaje223"
+}
+
+###
+GET {{host}}/api/messages/a1
+
+
+###
+GET {{host}}/api/task/project-123
+
+###
+
+POST {{host}}/api/task/project-123
+Content-Type: application/json
+
+{
+  "title": "test4"
+}
+###
+POST {{host}}/api/task/project-123
+Content-Type: application/json
+
+{
+  "title": "test12"
+}
+
+###
+
+PUT {{host}}/api/task/xMmXXnnGifskQNMOjIuT1
+Content-Type: application/json
+
+{
+  "status": "In progress"
+}
+
+###
+
+DELETE {{host}}/api/task/0eQBZZnjl8WLAhvLdr4YP
+
+###

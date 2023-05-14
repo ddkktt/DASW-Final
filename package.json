@@ -1,0 +1,30 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "DASW PROJECT",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xEfren548/DASW_DevCollab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xEfren548/DASW_DevCollab/issues"
+  },
+  "homepage": "https://github.com/xEfren548/DASW_DevCollab#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+    "nanoid": "^3.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
